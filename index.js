@@ -15,7 +15,7 @@ nodeServer.use('/',app)
 const port=  process.env.PORT || 4001;
 const host = process.env.HOST;
 
-nodeServer.listen(port,host,()=>{
+nodeServer.listen(port,()=>{
     console.log("Node_Server Started on",port);
     require("./DbConfig");
 })
